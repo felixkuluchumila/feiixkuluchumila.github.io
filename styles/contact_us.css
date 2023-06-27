@@ -1,0 +1,211 @@
+/* .sub-section{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-container{
+  margin: 20px;
+  width: 90%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-container .team-member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 0 2px;
+  color: #333;
+  
+}
+.team-container .team-member .image-container img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid  orange;
+  transition: 0.6s ease-in;
+}
+.team-container .team-member h2{
+  font-weight: 600;
+  transition: 1.2s ease-in-out;
+}
+.team-container .team-member p{
+  margin: 3px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 1.2s ease-in-out;
+}
+
+.team-container .team-member .social-links{
+  margin: 20px 0;
+
+}
+.team-container .team-member .social-links a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  color: orange;
+  text-align: center;
+  padding: 4px 0;
+  font-size: 2rem;
+}
+.team-container .team-member .social-links a:hover
+{
+  cursor: pointer;
+  color: green;
+  border: 2px solid green;
+}
+.team-container .team-member button:hover{
+  cursor: pointer;
+  background-color: green;
+}
+.team-container .team-member button{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  outline: none;
+  border: 2px s0lid white;
+}
+@media(max-width: 720px){
+  .team-container{
+    width: 100%;
+    margin: 4px;
+    
+  }
+  
+} */
+
+
+/* .sub-section{
+    padding: 10px;
+    border: solid red 2px;
+    width: 100%;
+}
+.sub-section .team-member{
+  width: 90%;
+  margin: 20px;
+  border: 2px black solid;
+} */
+
+.other-section{
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.other-section .topic{
+  border-radius: 20px;
+  box-shadow: 0 0 2px;
+  padding: 40px;
+  margin-bottom: 30px;
+  min-width: 320px;
+}
+.other-section .topic h1{
+  text-align: center;
+  font-size: 2.5rem;
+  
+}
+.other-section .topic p{
+  font-size: 1rem;
+}
+.other-section .team-container{
+  width: 100%;
+  box-shadow: 0 0 2px;
+  border-radius: 20px;
+  min-width: 320px;
+
+}
+.other-section .team-container .team-member{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+
+
+
+}
+.other-section .team-container .team-member .image-container img{
+    width: 200px;
+  height: 200px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: 1.2s ease-in-out;
+}
+#name, #course, #occupation, #nickname {
+  transition: 1.5s ease;
+  margin: 5px;
+}
+
+#changeButton{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  width: 120px;
+  height: 45px;
+  margin: 10px 0;
+}
+
+.team-container .team-member .social-links a{
+    display: inline-block;
+    border: 2px solid orange;
+    padding: 25px;
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 3px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 7px 0;
+    color: orange;
+
+}
+
+@media(max-width: 567px){
+  .other-section .team-container .team-member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+  .other-section .team-container .team-container .image-container img{
+    width: 120px;
+    height: 120px;
+  }
+  #name{
+    font-size: 1.2rem;
+  }
+  #course, #occupation, #nickname{
+    font-size: 0.9rem;
+  }
+}

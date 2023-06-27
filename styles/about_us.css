@@ -1,0 +1,175 @@
+.main-content{
+    height: 100vh;
+    background: url(../images/wallpapers/home.jpg) fixed no-repeat center center/ cover;
+}
+.about-us{
+    padding: 50px;
+    border: 2px solid green;
+}
+.about-us .box{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+
+}
+.about-us .box h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about-us .box p{
+    line-height: 2;
+    
+}
+.about-us .price-container{
+    box-shadow: 0 0 2px;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 340px;
+   
+    
+}
+.about-us .price-container h1{
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+}
+.about-us .price-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 420px;
+}
+.about-us .price-container .row .pricing{
+    padding: 50px;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+    height: 500px;
+    min-width: 300px;
+    
+}
+.about-us .price-container .row .pricing h2{
+    font-size: 1.3rem;
+    color: #000;
+}
+.about-us .price-container .row .pricing h3{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+.about-us .price-container .row .pricing h3 i{
+    color: red;
+    font-size: 1.5rem;
+    
+
+}
+.about-us .price-container .row .pricing ul{
+  list-style: none;
+
+}
+.about-us .price-container .row ul li i{
+    text-decoration: none;
+    font-style: none;
+    color: green;
+    margin-right: 5px;
+}
+
+.about-us .price-container .row .pricing button{
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(130deg, green, yellow);
+}
+#twenty button{
+    margin-top: 170px;
+    margin-left: 25%;
+    display: none;
+}
+#fifty button{
+    margin-top: 20px;
+    margin-left: 25%;
+    display: none;
+}
+
+#hundred button{
+    margin-top: 37px;
+    margin-left: 25%;
+    display: none;
+
+}
+
+@media(max-width: 1100px){
+    .about-us .price-container .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .about-us .price-container .row .pricing{
+        width: 80%;
+        margin: 20px;
+        
+    }
+    #twenty button{
+        margin-top: 100px;
+        margin-left: 40%;
+        display: none;
+    }
+    #fifty button{
+        margin-top: 100px;
+        margin-left: 40%;
+        display: none;
+    }
+    
+    #hundred button{
+        margin-top: 100px;
+        margin-left: 40%;
+        display: none;
+    
+    }
+}
+
+@media(max-width: 567px){
+    .about-us{
+        padding: 5px;
+        margin: 0;
+    }
+    .about-us .price-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 5px;
+       
+    }
+    .about-us .price-container .row{
+        padding: 0;
+        margin: 0;
+    }
+    .about-us .price-container .row .pricing{
+        width: 80%;
+        margin: 20px;
+        
+    }
+    #twenty button{
+        margin-top: 155px;
+        margin-left: 28%;
+        display: none;
+    }
+    #fifty button{
+        margin-top: 30px;
+        margin-left: 28%;
+        display: none;
+    }
+    
+    #hundred button{
+        margin-top: 40px;
+        margin-left: 28%;
+        display: none;
+    
+    }
+}

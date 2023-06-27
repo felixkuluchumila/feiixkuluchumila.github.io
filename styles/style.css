@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}    
+
+header{
+    height: 4rem;
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    z-index: 1000;
+}
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 1.1 rem;
+    color: #333;
+    display: block;
+    padding: 20px;
+}
+header .navbar ul li a:hover{
+    background-color: #333;
+    color: #ffff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #333;
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:hover > ul, header .navbar ul li:focus > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/* sections part */
+.main-content{
+    height: 100vh;
+    background: url(../images/wallpapers/photo_editing22.jpg) fixed no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+.main-content .section-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+.main-content .section-container h1{
+    font-size: 2rem;
+}
+.sub-section{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    border: solid green 2px;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.sub-section h1{
+    font-weight: 600;
+    font-size: 2.5rem; 
+}
+
+.sub-section  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    transition: 0.4s ease;
+
+}
+.sub-section .row .course-item i{
+    font-size: 2.5rem;
+    margin: 3px;
+}
+.sub-section .row .course-item{
+    width: 30%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 16px 0 grey;
+    padding: 40px;
+    text-align: center;
+    transition: 0.3s ease;
+
+}
+/* courses styling */
+
+.sub-section .topic{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+    margin: 20px;
+}
+.sub-section .topic h1{
+    font-size: 2rem;
+    margin: 20px;
+}
+.sub-section .topic p{
+    font-size: 1.1rem
+}
+/* Our Little Parralax Dude Here */
+.work-with-us{
+    height: 600px;
+    background: url(../../webProject/images/wallpapers/computer_networking.jpg) fixed no-repeat center center/ cover;
+    /* overflow: hidden; */
+}
+.work-with-us .work-container{
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    padding: 80px 0;
+
+}
+.work-with-us .work-container h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.work-with-us .work-container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.work-with-us .work-container .col-4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    text-align: center;
+    margin: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.enforce{
+    overflow: hidden;
+}
+.enforce .card{
+    height : 400px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px;
+    padding: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 8px 16px 0 grey;
+    font-weight: 100;
+
+}
+.enforce .card h1{
+    font-size: 4rem;
+    margin: 150px 0;
+}
+.enforce .card p{
+    font-size: 1.2rem;
+}
+
+.another-parallax{
+    height: 500px;
+    background: url(../../webProject/images/wallpapers/graphics_designig.jpg) fixed no-repeat center center/ cover;
+}
+
+.another-parallax .start-learning{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.another-parallax .start-learning h1{
+    font-size: 7rem;
+}
+
+
+
+/* Footer */
+.page-footer{
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    /* min-width: 400px; */
+    overflow: hidden;
+}
+.page-footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+}
+
+
+/* page footer */
+.page-footer .row .content h4{
+    position: relative;
+    top: 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #fff;
+    margin: 20px 0;
+
+}
+.page-footer .row .content ul{
+    list-style: none;
+}
+.page-footer .row .content ul li{
+    margin: 5px;
+}
+.page-footer .row .content ul li a{
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.3s ease;
+    margin: 20px 0;
+
+}
+.page-footer .row .content ul li a:hover{
+    margin-left: 5px;
+}
+
+.page-footer .row .content .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #bbb;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+
+}
+.page-footer .row .content .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+
+
+
+
+
+@media(max-width: 1100px){
+    header{
+        padding: 20px;
+
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;right: 0;
+        background-color: #ffff;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 1000%;
+       
+    }
+    header .navbar ul li ul li{
+        background-color: #eee;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    header .navbar ul li ul li ul li{
+        background-color: lightblue;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+        height: 100vh;
+        overflow: auto;
+    }
+/* home section */
+    .sub-section  .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .sub-section .row .course-item{
+        width: 90%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 25px 20px;
+        border-radius: 10px;
+        box-shadow: 2px 8px 16px 0 grey;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .enforce .card h1{
+        font-size: 2rem;
+    }
+    .enforce .card p{
+        font-size: 1rem;
+    }
+    .work-with-us .work-container{
+        height: 900px;
+    }
+    .enforce .card{
+        background-color: white;
+        color: black;
+    }
+    .enforce .another-parallax .start-learning h1{
+        font-size: 6rem;
+        text-align: center;
+    }
+    /* footer responsivity */
+
+/* Responsivity */
+
+.page-footer .row .content{
+        width: 100%;
+        /* padding: 0 15px; */
+        margin-bottom: 30px;
+
+    }
+
+
+}
+@media(max-width: 666px){
+    .sub-section h1{
+        font-size: 1.5rem;
+    }
+    .sub-section .row .course-item{
+        width: 100%;
+    }
+    .sub-section{
+        padding: 10px;
+    }
+    .sub-section .topic{
+        width: 100%;
+    }
+    /* parralax guy */
+    .work-with-us .work-container span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .work-with-us .work-container{
+        height: 900px;
+    }
+    .work-with-us .work-container span .col-4{
+        margin: 20px 0;
+
+    }
+    .enforce .another-parallax .start-learning h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+     .enforce .card h1{
+        font-size: 2rem;
+    }
+   
+    .work-with-us{
+        height: 800px;
+    }
+    .work-with-us .work-container .col-4{
+        width: 160px;
+        height: 160px;
+        border: 2px solid grey;
+        border-radius: 50%;
+        margin: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+}
+
